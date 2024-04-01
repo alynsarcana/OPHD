@@ -552,7 +552,7 @@ void MapViewState::onMouseDown(NAS2D::EventHandler::MouseButton button, NAS2D::P
 		mNavControl->onClick(MOUSE_COORDS);
 		if (oldDepth != mMapView->currentDepth())
 		{
-			changeViewDepth(mMapView->currentDepth());
+			onChangeDepth(oldDepth, mMapView->currentDepth());
 		}
 
 		// MiniMap Check
